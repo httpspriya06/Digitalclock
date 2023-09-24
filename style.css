@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
+:root {
+  --primary-color: #000;
+  --secondary-color: #fff;
+  --primary-color-dark: #fff;
+  --secondary-color-dark: #333;
+}
+html {
+  transition: all 0.5s ease-in;
+}
+html.dark {
+  --primary-color: var(--primary-color-dark);
+  --secondary-color: var(--secondary-color-dark);
+}
+
+html.dark {
+  background-color: #111;
+  color: var(--primary-color);
+}
+
+.toggle:focus {
+  outline: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+.main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+button {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  font-size: 12px;
+  border-radius: 4px;
+  padding: 0.5%;
+  height: 2rem;
+  width: 6rem;
+  margin-bottom: 5rem;
+}
+
+#hour {
+  width: 3px;
+  height: 90px;
+  background-color: rgba(208, 188, 251, 0.944);
+  transform-origin: bottom;
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  opacity: 0.8;
+  transition: all 0.5s ease-in;
+}
+
+#minute {
+  width: 3px;
+  height: 100px;
+  background-color: grey;
+  transform-origin: bottom;
+  position: absolute;
+  left: 50%;
+  top: 28.3%;
+  opacity: 0.8;
+  transition: all 0.5s ease-in;
+}
+#second {
+  width: 3px;
+  height: 100px;
+  background-color: #9136f3;
+  transform-origin: bottom;
+  position: absolute;
+  left: 50%;
+  top: 28.3%;
+  opacity: 0.8;
+  transition: all 0.5s ease-in;
+}
+
+#time {
+  text-align: center;
+  font-size: 5rem;
+}
+#date {
+  text-align: center;
+  font-size: 1.5rem;
+}
+.clock2 {
+  margin-top: -10rem;
+}
+/* ................................. */
